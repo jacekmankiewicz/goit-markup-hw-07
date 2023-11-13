@@ -128,14 +128,6 @@
     font-style: normal;
     padding: 24px 0;
 }
-.address-link {
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-block;
-}
 .address-link:hover {
     color: #404bbf;
 }
@@ -419,15 +411,12 @@
         0px 1px 6px rgba(46, 47, 66, 0.08);
 
 }
-.div-container {
-    display: flex;
-}
 .container {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.nav-header {
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -448,6 +437,9 @@
     border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
+}
+.address-link {
+    display: none;
 }
 .portfolio-buttons {
     flex-wrap: wrap;
@@ -496,8 +488,7 @@
     gap: 40px;
 }
 .nav-list {
-    display: flex;
-    gap: 40px;
+    display: none;
 }
 .social-media-footer {
     color: var(--white-background-color);
@@ -855,12 +846,18 @@
     margin-left: 16px;
 }
 .menu-toggle {
-    background-color: transparent;
-    align-items: center;
-    border: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 4px;
+    min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        outline: none;
 }
 
 .menu-hamburger:hover,
@@ -874,7 +871,7 @@
 }
 
 .menu-hamburger {
-    fill: var(--dark);
+    fill: var(--dark-blue-color);
     align-items: center;
 }
 @media screen and (min-width: 428px) {
@@ -934,16 +931,60 @@ screen and (min-resolution: 2dppx) {
         justify-content: space-around;
     }
 
-    .menu-toggle,
-    .js-open-menu {
+    .menu-toggle {
         display: none;
     }
-
+    .menu-toggle:hover,
+    .menu-toggle:focus {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 32px;
+        background-color: #3f51b5;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
+    .menu-container.is-open {
+        transform: translateX(0);
+    }
+    .menu-container .menu-toggle {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: #fff;
+    }
+    
+    .mobile-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .mobile-menu .link {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
     .section-one {
         max-width: 1157px;
         height: 436px;
     }
-
+    .address-link {
+        font-size: 12px;
+        letter-spacing: 0, 04em;
+        line-height: 1.17;
+        font-weight: 400;
+        color: var(--text-color);
+        display: inline-block;
+    }
     .nav-link {
         font-size: 12px;
         letter-spacing: 0, 04em;
@@ -960,7 +1001,7 @@ screen and (min-resolution: 2dppx) {
         margin: 0 auto 36px auto;
     }
 
-    .nav-header {
+    .navigation {
         justify-content: flex-start;
         padding: 0;
     }
@@ -1021,7 +1062,7 @@ screen and (min-resolution: 2dppx) {
         flex-direction: column;
     }
 
-    .list-navigation {
+    .nav-list {
         list-style: none;
         margin: 0;
         padding-left: 0;
@@ -1032,18 +1073,11 @@ screen and (min-resolution: 2dppx) {
     .address {
         font-style: normal;
     }
-
     .link-contacts-transition {
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-    .link:hover,
-    .link:focus {
-        color: var(--pressed-state);
-    }
-
     .link-menu {
         padding: 24px 0 24px 0;
         display: inline-block;
@@ -1121,7 +1155,7 @@ screen and (min-resolution: 2dppx) {
         margin: 0 auto 48px auto;
     }
 
-    .list-navigation {
+    .nav-list {
         list-style: none;
         margin: 0;
         padding-left: 0;
@@ -1149,11 +1183,7 @@ screen and (min-resolution: 2dppx) {
         color: var(--dark-blue-color);
         }
 
-    .list-address-tablet {
-        display: none;
-    }
-
-    .link-contacts {
+    .address-link {
         font-size: 16px;
         letter-spacing: 0.02em;
         line-height: 1.5;
