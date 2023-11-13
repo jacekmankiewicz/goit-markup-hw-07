@@ -908,7 +908,6 @@ screen and (min-resolution: 2dppx) {
             url("../images/hw4/people-office-mobile@2x.jpg");
     }
 }
-
 /* ================================================= MOBILE 👇 ========================================= */
 @media screen and (min-width: 320px) and (max-width: 428px) {
     .container {
@@ -918,8 +917,7 @@ screen and (min-resolution: 2dppx) {
     .footer-input {
         width: 268px;
     }
-}
-
+ }
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
     .container {
