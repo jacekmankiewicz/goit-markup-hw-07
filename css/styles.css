@@ -878,18 +878,6 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .container {
-        width: 1158px;
-    }
-}
-
 @media screen and (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
