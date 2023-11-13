@@ -1212,7 +1212,7 @@ screen and (min-resolution: 2dppx) {
 
     .logo-link-footer {
         position: relative;
-        color: var(--pressed-state);
+        color: var(--pressed-state-color);
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
