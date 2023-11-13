@@ -126,7 +126,6 @@
 }
 .address {
     font-style: normal;
-    padding: 24px 0;
 }
 .address-link:hover {
     color: #404bbf;
@@ -502,7 +501,6 @@
     margin-bottom: 16px;
     text-align: center;
     flex-direction: column;
-    margin-top: 72px;
 
 }
 .social-media-footer-list {
@@ -927,8 +925,8 @@ screen and (min-resolution: 2dppx) {
     }
     .address-list {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .menu-toggle {
@@ -994,15 +992,15 @@ screen and (min-resolution: 2dppx) {
         line-height: 1.17;
         font-weight: 400;
         color: var(--text-color);
-        display: inline-block;
+        display: flex;
     }
     .nav-link {
         font-size: 12px;
         letter-spacing: 0, 04em;
         line-height: 1.17;
-        font-weight: 400;
         color: var(--text);
-        display: inline-block;
+        font-weight: 500;
+        font-size: 16px;
     }
 
     .section-one-text {
@@ -1059,26 +1057,20 @@ screen and (min-resolution: 2dppx) {
         width: 264px;
     }
 
-    .subscribe {
-        padding: 0 24px 0 0;
+    .footer-div {
     }
 
     .footer-form {
         flex-direction: row;
         gap: 24px;
     }
-
-    .list-address {
-        display: flex;
-        flex-direction: column;
-    }
-
     .nav-list {
         list-style: none;
         margin: 0;
         padding-left: 0;
         display: flex;
         gap: 40px;
+        justify-content: space-between;
     }
 
     .address {
@@ -1178,7 +1170,7 @@ screen and (min-resolution: 2dppx) {
         font-style: normal;
     }
 
-    .list-address {
+    .address-list {
         display: flex;
         flex-direction: row;
         gap: 40px;
@@ -1218,7 +1210,7 @@ screen and (min-resolution: 2dppx) {
         display: inline-block;
     }
 
-    .link-underline {
+    .logo-link-footer {
         position: relative;
         color: var(--pressed-state);
         transition-property: color;
@@ -1226,7 +1218,7 @@ screen and (min-resolution: 2dppx) {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .link-underline::after {
+    .logo-link-footer::after {
         content: "";
         position: absolute;
         left: 0px;
@@ -1257,7 +1249,6 @@ screen and (min-resolution: 2dppx) {
         max-width: 1160px;
         column-gap: 0;
     }
-
     .paragraph-footer {
         margin-bottom: 0;
     }
