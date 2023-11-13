@@ -1096,7 +1096,7 @@ screen and (min-resolution: 2dppx) {
 
     .index-link {
         position: relative;
-        color: var(--pressed-state);
+        color: var(--pressed-state-color);
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1108,7 +1108,7 @@ screen and (min-resolution: 2dppx) {
         left: 0px;
         bottom: -1px;
         height: 4px;
-        background-color: var(--pressed-state);
+        background-color: var(--pressed-state-color);
         border-bottom: 2px;
         border-radius: 2px;
         width: 100%;
