@@ -897,7 +897,7 @@ screen and (min-resolution: 2dppx) {
     .section-one {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url("../images/people-office-mobile@2x.jpg");
+            url("../images/hw4/people-office-mobile.jpg@2x.jpg");
     }
 }
 
@@ -954,6 +954,7 @@ screen and (min-resolution: 2dppx) {
         z-index: 999;
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
+        overflow: auto;
     }
     .menu-container.is-open {
         transform: translateX(0);
@@ -1118,7 +1119,7 @@ screen and (min-resolution: 2dppx) {
         .section-one {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url("../images/people-office-tablet@2x.jpg");
+                url("../images/hw4/people-office-tablet.jpg@2x.jpg");
         }
     }
 }
@@ -1312,7 +1313,7 @@ screen and (min-resolution: 2dppx) {
         .section-one {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url("../images/people-office-desktop@2x.jpg");
+                url("../images/hw4/people-office.jpg@2x.jpg");
         }
     }
 }
