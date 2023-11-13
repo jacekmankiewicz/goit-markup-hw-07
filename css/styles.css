@@ -1094,7 +1094,7 @@ screen and (min-resolution: 2dppx) {
         display: inline-block;
     }
 
-    .link-underline {
+    .index-link {
         position: relative;
         color: var(--pressed-state);
         transition-property: color;
@@ -1102,7 +1102,7 @@ screen and (min-resolution: 2dppx) {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .link-underline::after {
+    .index-link::after {
         content: "";
         position: absolute;
         left: 0px;
