@@ -1119,7 +1119,7 @@ screen and (min-resolution: 2dppx) {
         .section-one {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url("../images/hw4/people-office-tablet.jpg@2x.jpg");
+                url("../images/hw4/people-office-tablet@2x.jpg");
         }
     }
 }
