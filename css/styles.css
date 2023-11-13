@@ -919,12 +919,12 @@ screen and (min-resolution: 2dppx) {
         padding: 40px;
         background-color: var(--pressed-state-color);
         z-index: 999;
-        transform: translateX(100%);
+        transform: translateX(0);
         transition: transform 250ms ease-in-out;
         overflow: auto;
     }
         .menu-container.is-open {
-            transform: translateX(0);
+            transform: translateX(100%);
         }
     
         .menu-container .nav-list {
