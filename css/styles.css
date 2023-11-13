@@ -872,12 +872,6 @@
     fill: var(--dark-blue-color);
     align-items: center;
 }
-@media screen and (min-width: 428px) {
-    .container {
-        width: 428px;
-    }
-}
-
 @media screen and (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
