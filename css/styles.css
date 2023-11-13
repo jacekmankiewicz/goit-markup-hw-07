@@ -938,15 +938,21 @@ screen and (min-resolution: 2dppx) {
     .menu-toggle:focus {
         background-color: rgba(0, 0, 0, 0.1);
     }
+    .js-open-menu {
+        display: none;
+    }
     
     .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        padding: 32px;
-        background-color: #3f51b5;
+        padding: 40px;
+        background-color: var(--modal-background-color);
         z-index: 999;
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
@@ -954,11 +960,16 @@ screen and (min-resolution: 2dppx) {
     .menu-container.is-open {
         transform: translateX(0);
     }
-    .menu-container .menu-toggle {
+    .menu-container .nav-list {
         position: absolute;
         top: 16px;
         right: 16px;
         color: #fff;
+    }
+    .menu-container .address {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 48px;
     }
     
     .mobile-menu {
