@@ -1228,6 +1228,8 @@ screen and (min-resolution: 2dppx) {
         align-items: baseline;
         max-width: 1160px;
         column-gap: 0;
+        flex-wrap: wrap;
+        display: flex;
     }
     .paragraph-footer {
         margin-bottom: 0;
