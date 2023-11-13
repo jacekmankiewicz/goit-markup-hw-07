@@ -845,17 +845,17 @@
 }
 .menu-toggle {
     min-height: 40px;
-        min-width: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-        cursor: pointer;
-        border: none;
-        border-radius: 50%;
-        outline: none;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
 }
 
 .menu-hamburger:hover,
@@ -950,7 +950,7 @@ screen and (min-resolution: 2dppx) {
         width: 100vw;
         height: 100vh;
         padding: 40px;
-        background-color: var(--modal-background-color);
+        background-color: var(--pressed-state-color);
         z-index: 999;
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
