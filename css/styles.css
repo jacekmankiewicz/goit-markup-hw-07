@@ -63,7 +63,9 @@
 .list-section-two {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 72px 24px;
+    justify-content: center;
+    align-items: center;
 }
 .section-three-item {
     width: calc((100% - 48px)/3);
@@ -1040,7 +1042,6 @@ screen and (min-resolution: 2dppx) {
         display: flex;
         flex-wrap: wrap;
         row-gap: 64px;
-        flex-wrap: wrap;
         column-gap: 24px;
     }
 
@@ -1051,10 +1052,10 @@ screen and (min-resolution: 2dppx) {
     }
 
     .list-section-two {
-        column-gap: 24px;
-        row-gap: 72px;
-        margin: 0 auto;
-        max-width: 736px;
+                display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 64px;
+                    column-gap: 24px;
     }
     .footer-container {
         max-width: 584px;
