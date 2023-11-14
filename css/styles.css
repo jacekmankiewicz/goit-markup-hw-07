@@ -247,7 +247,7 @@
 }
 .footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    padding: 96px 0 96px 0;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -391,10 +391,8 @@
     margin-bottom: 16px;
 }
 .logo-footer {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--light-color);
-    max-width: 264px;
+    font-weight: 400;
 }
 .section-four-color {
     background-color: #FFFFFF
@@ -504,13 +502,8 @@
 }
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    align-items: center;
-    justify-content: center;
 }
 .footer-container-div-first {
-    margin-bottom: 72px;
 }
 .footer-social-media-icons {
     height: 40px;
@@ -981,6 +974,9 @@ screen and (min-resolution: 2dppx) {
         font-weight: 500;
         font-size: 16px;
     }
+    .section-text {
+        text-align: left;
+    }
 
     .section-one-text {
         font-size: 56px;
@@ -1020,8 +1016,6 @@ screen and (min-resolution: 2dppx) {
     }
     .footer-container {
         max-width: 584px;
-        flex-wrap: wrap;
-        column-gap: 24px;
     }
 
     .footer-container-div-first {
@@ -1196,7 +1190,9 @@ screen and (min-resolution: 2dppx) {
         padding: 24px 0 24px 0;
         display: inline-block;
     }
-
+    .section-text {
+        text-align: center;
+    }
     .logo-link-footer {
         position: relative;
         color: var(--pressed-state-color);
@@ -1235,8 +1231,6 @@ screen and (min-resolution: 2dppx) {
         align-items: baseline;
         max-width: 1160px;
         column-gap: 0;
-        flex-wrap: wrap;
-        display: flex;
     }
     .paragraph-footer {
         margin-bottom: 0;
