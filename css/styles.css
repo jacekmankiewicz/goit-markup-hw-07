@@ -554,7 +554,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 408px;
-    min-height: 584px;
+    height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -983,6 +983,13 @@ screen and (min-resolution: 2dppx) {
     .logo-footer {
         margin: 0 auto;
         margin-top: 16px;
+    }
+    .modal-box {
+        width: 95%;
+        max-width: 392px;
+        height: 95%;
+        max-height: 584px;
+        overflow: scroll;
     }
  }
 /* ================================================= TABLET 👇 ========================================= */
