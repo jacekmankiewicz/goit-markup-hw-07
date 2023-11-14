@@ -842,6 +842,7 @@
 .social-media-footer-list {
     display: flex;
     gap: 16px;
+    margin-bottom: 72px;
 }
 .footer-button {
     min-width: 165px;
@@ -976,6 +977,10 @@ screen and (min-resolution: 2dppx) {
         justify-content: center;
     }
     .footer-button {
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    .logo-footer {
         margin: 0 auto;
         margin-top: 16px;
     }
