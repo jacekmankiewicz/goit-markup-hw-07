@@ -1052,10 +1052,10 @@ screen and (min-resolution: 2dppx) {
     }
 
     .list-section-two {
-                display: flex;
-                    flex-wrap: wrap;
-                    row-gap: 64px;
-                    column-gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
     }
     .footer-container {
         max-width: 584px;
