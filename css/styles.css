@@ -507,7 +507,6 @@
     gap: 16px;
 }
 .footer-container {
-    display: flex;
 }
 .footer-container-div-first {
 }
@@ -1260,6 +1259,7 @@ screen and (min-resolution: 2dppx) {
         align-items: baseline;
         max-width: 1160px;
         column-gap: 0;
+        display: flex;
     }
     .paragraph-footer {
         margin-bottom: 0;
