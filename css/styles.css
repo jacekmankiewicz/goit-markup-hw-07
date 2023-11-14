@@ -280,6 +280,17 @@
     margin-bottom: 72px;
     align-items: flex-start;
 }
+.section-text-values {
+    font-size: 36px;
+        line-height: 1.11;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        text-align: center;
+        color: var(--dark-blue-color);
+        margin-bottom: 72px;
+        align-items: flex-start;
+    }
 .section-three-text {
     font-size: 36px;
     line-height: 1.11;
@@ -1002,7 +1013,11 @@ screen and (min-resolution: 2dppx) {
         font-size: 16px;
     }
     .section-text {
+        text-align: center;
+    }
+    .section-text-values {
         text-align: left;
+
     }
 
     .section-one-text {
@@ -1220,6 +1235,9 @@ screen and (min-resolution: 2dppx) {
     }
     .section-text {
         text-align: center;
+    }
+    .section-text-values {
+
     }
     .logo-link-footer {
         position: relative;
