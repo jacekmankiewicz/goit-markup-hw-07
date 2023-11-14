@@ -403,13 +403,6 @@
     text-align: center;
     margin-bottom: 16px;
 }
-.logo-footer {
-    color: var(--light-color);
-    font-weight: 400;
-    max-width: 264px;
-    line-height: 1.5;
-    margin: 0 auto;
-}
 .section-four-color {
     background-color: #FFFFFF
 }
@@ -514,19 +507,10 @@
     letter-spacing: 0.02em;
     font-weight: 500;
     margin-bottom: 16px;
-    text-align: center;
     flex-direction: column;
 
 }
-.social-media-footer-list {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-}
 .footer-container {
-}
-.footer-container-div-first {
-    margin-bottom: 72px;
 }
 .footer-social-media-icons {
     height: 40px;
@@ -848,6 +832,33 @@
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 48px;
+}  
+.logo-footer {
+    color: var(--light-color);
+    font-weight: 400;
+    max-width: 264px;
+    line-height: 1.5;
+}
+.social-media-footer-list {
+    display: flex;
+    gap: 16px;
+}
+.footer-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
 }
 .mobile-menu {
     padding: 0;
@@ -916,25 +927,6 @@
     color: #ffffff;
     gap: 24px;
 }
-.footer-button {
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4D5AE5;
-    border: none;
-    border-radius: 4px;
-    margin: 0 auto;
-    margin-top: 16px;
-}
 .footer-button-icon {
     margin-left: 16px;
 }
@@ -970,6 +962,22 @@ screen and (min-resolution: 2dppx) {
 
     .footer-input {
         width: 100%;
+    }
+    .footer-container-div-first {
+            margin-bottom: 72px;
+    }
+    .logo-link-footer {
+        margin: 0 auto;
+    }
+    .social-media-footer {
+        text-align: center;
+    }
+    .social-media-footer-list {
+        justify-content: center;
+    }
+    .footer-button {
+        margin: 0 auto;
+        margin-top: 16px;
     }
  }
 /* ================================================= TABLET 👇 ========================================= */
@@ -1064,7 +1072,11 @@ screen and (min-resolution: 2dppx) {
     column-gap: 24px;
     }
     .footer-container {
-        max-width: 584px;
+        max-width: 530px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+
     }
 
     .footer-container-div-first {
@@ -1087,6 +1099,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .footer-form {
+        display: flex;
         flex-direction: row;
         gap: 24px;
     }
