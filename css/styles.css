@@ -479,6 +479,12 @@
     display: flex;
     gap: 40px;
 }
+.address-list-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+            
+}
 .nav-list {
     display: none;
 }
@@ -836,11 +842,33 @@
 .mobile-menu .link:hover {
     color: var(--pressed-state-color);
         }
+.address-mobile {
+    font-style: normal;
+        }
 .address-link-mobile {
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin-bottom: 48px;
+    color: var(--dark-blue-color);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+}
+.address-link-mobile-phone {
+    color: var(--pressed-state-color);
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.11;
+    padding-top: 120px;
+    margin-bottom: 48px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media-footer-list-mobile {
+    display: flex;
+    gap: 56px;
 }
 .footer-paragraph {
     color: #ffffff;
@@ -1158,6 +1186,7 @@ screen and (min-resolution: 2dppx) {
         margin: 0;
     }
     .section-five-list {
+        flex-wrap: nowrap;
     }
     .section-two-header {
         font-weight: 500;
